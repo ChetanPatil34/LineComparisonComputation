@@ -12,7 +12,7 @@ public class Linecomparison {
 	 
 	
 	
-	public void Input() {
+	public void Input(int i, int j, int k, int l) {
 		System.out.println("Enter Two Point x1 & y1 and x2 & y2 :");
 		Scanner scanner = new Scanner(System.in);
 		
@@ -38,6 +38,10 @@ public class Linecomparison {
 		{
 			System.out.println("The line are Same");
 		}
+		else if(this.LineCalulate() > linecomparison2.LineCalulate()) 
+ 		{
+	 			System.out.println("Line 1 length is Greater then Line 2 Length");
+	 	}
 		else
 		{
 			System.out.println("The line are Not Same");
@@ -50,8 +54,8 @@ public class Linecomparison {
 		System.out.println("Welcome to Line Comparison Computation");
 		Linecomparison linecomparison = new Linecomparison();
 		Linecomparison linecomparison2 = new Linecomparison();
-		linecomparison.Input();
-		linecomparison2.Input();
+		linecomparison.Input(90, 50, 10, 20);
+		linecomparison2.Input(40, 50, 10, 20);
 		
 		linecomparison.Linecheck(linecomparison2);
 		
